@@ -7,6 +7,8 @@ import { signOut } from 'firebase/auth';
 import '../styles/styles.css';
 import AuthDetails from '../components/AuthDetails';
 
+
+
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -43,6 +45,8 @@ export default function RootLayout({ children }) {
         {(isUserPage || isAdminPage) && <div className="backgroundpicture" />}
         {(isUserPage || isAdminPage) && <AuthDetails />}
         <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
+
+       
       </body>
     </html>
   );

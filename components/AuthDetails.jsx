@@ -40,7 +40,7 @@ const AuthDetails = () => {
               </>
             ) : (
               <>
-                Let the games begin<br />
+                Let the game begin<br />
                 <strong>{user?.email}</strong>
               </>
             )}

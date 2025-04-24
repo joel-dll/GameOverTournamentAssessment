@@ -88,7 +88,7 @@ export default function AuthForm() {
         <input
           type="password"
           className="input-window"
-          placeholder="Password"
+          placeholder="Password (6-30 chars required)"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
@@ -97,7 +97,7 @@ export default function AuthForm() {
 
       <div className="auth-buttons">
         <button className="btn" onClick={handleSignIn}>Sign In</button>
-        <button className="btn" onClick={handleSignUp}>Sign Up</button>
+        <button className="btn" onClick={handleSignUp}>Sign Up</button> 
         <button className="btn" type="button" onClick={handleGoogleLogin}>
           Sign in with Google
         </button>

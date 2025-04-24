@@ -5,6 +5,7 @@ import '../styles/styles.css';
 import Image from 'next/image';
 import AuthForm from '../components/auth/AuthForm';
 
+
 export default function Home() {
   return (
     <div className="login-container">

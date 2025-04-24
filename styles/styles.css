@@ -152,3 +152,41 @@
     z-index: 4;
   }
   
+  .backgroundpicture {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 30vw;
+    height: 90vh;
+    background-image: url("/images/AdobeStock_970112383.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 15%;
+  }
+  .auth-details {
+    position: fixed;
+    top: 10px;
+    left: 98px;
+    font-size: 1.8vh;
+    font-family: 'Play', 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .authdetails-msg {
+    background-color: rgb(80, 255, 179);
+    border-radius: 16px;
+    padding: 12px 20px;
+    width: fit-content;
+    max-width: 70vw; /* Limit so it doesn't stretch too far */
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Play', 'Poppins', sans-serif;
+    font-size: 12px;
+  }
+  

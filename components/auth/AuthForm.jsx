@@ -1,8 +1,5 @@
 'use client';
 
-
-
-
 import React, { useState } from 'react';
 import { auth } from '../../lib/firebase';
 import {
@@ -14,7 +11,6 @@ import {
 import { useRouter } from 'next/navigation';
 
 const adminEmail = 'admin@gameover.com';
-
 const provider = new GoogleAuthProvider();
 
 export default function AuthForm() {
@@ -29,50 +25,49 @@ export default function AuthForm() {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const userEmail = userCredential.user.email;
-  
+
       if (userEmail === adminEmail) {
-        router.push('/admin');
+        router.push('/admin'); // ✅ Correct
       } else {
-        router.push('/user');
+        router.push('/user');  // ✅ Correct
       }
     } catch (err) {
       setError(err.message);
     }
   };
-  
+
   const handleSignUp = async (e) => {
     e.preventDefault();
     setError('');
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const userEmail = userCredential.user.email;
-  
+
       if (userEmail === adminEmail) {
-        router.push('/dashboard/admin');
+        router.push('/admin'); // ✅ Corrected
       } else {
-        router.push('/dashboard/user');
+        router.push('/user');  // ✅ Corrected
       }
     } catch (err) {
       setError(err.message);
     }
   };
-  
+
   const handleGoogleLogin = async () => {
     setError('');
     try {
       const result = await signInWithPopup(auth, provider);
       const userEmail = result.user.email;
-  
+
       if (userEmail === adminEmail) {
-        router.push('/dashboard/admin');
+        router.push('/admin'); // ✅ Corrected
       } else {
-        router.push('/dashboard/user');
+        router.push('/user');  // ✅ Corrected
       }
     } catch (err) {
       setError(err.message);
     }
   };
-  
 
   return (
     <form className="auth-container">

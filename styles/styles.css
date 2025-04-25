@@ -372,3 +372,17 @@
   transition: all 0.3s ease-in-out;
 
 }
+.btndelete {
+  font-family: "Play", sans-serif;
+  width: 20%;
+  padding:3px;
+  background-color: rgb(192, 0, 0);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}

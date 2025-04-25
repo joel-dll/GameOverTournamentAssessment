@@ -4,6 +4,7 @@ import TournamentSearchForm from '/components/TournamentSearchForm';
 import TournamentResults from '/components/TournamentResults';
 import FooterBlack from '/components/FooterBlack'; 
 import UserRegistrations from '/components/UserRegistrations';
+import TournamentsMap from '/components/TournamentsMap';
 
 export default function UserPage() {
   const [tournaments, setTournaments] = useState([]);
@@ -18,6 +19,24 @@ export default function UserPage() {
     const data = await res.json();
     setTournaments(data);
   };
+  const handleRegister = async (tournamentId, gameTitle) => {
+    const user = auth.currentUser;
+    if (!user) return alert("Login required");
+
+    try {
+      await axios.post('/api/register', {
+        user_id: user.email,
+        tournament_id: tournamentId,
+        game_title: gameTitle,
+      });
+
+      alert(`Registered for ${gameTitle}`);
+      fetchTournaments();
+      document.dispatchEvent(new Event('updateRegistrations'));
+    } catch (err) {
+      alert(err.response?.data?.error || 'Registration failed');
+    }
+  };
 
   useEffect(() => {
     fetchTournaments();
@@ -28,6 +47,7 @@ export default function UserPage() {
       <TournamentSearchForm onSearch={fetchTournaments} />
       <TournamentResults tournaments={tournaments} refresh={fetchTournaments} />
       <UserRegistrations />
+      <TournamentsMap tournaments={tournaments} onRegister={handleRegister} />
       <FooterBlack />
     </div>
   );

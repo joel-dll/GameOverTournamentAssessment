@@ -320,3 +320,55 @@
   color: rgb(0, 176, 144);
   font-weight: 600;
 }
+
+.registration-box {
+  margin-inline-end: 20px; /* Existing property */
+  max-height: 700px; /* Set the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  padding-bottom: 1%;
+  
+}
+.registration-box{
+  position:absolute;
+  top:28vh;
+  width: 29vw;
+  background-color: rgba(255, 255, 255, 0.506);
+  border-radius: 35px;
+  font-family: "play";
+  font-size: 12px;
+  overflow-y: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  
+}
+.registration-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.reg-btn {
+  all: unset; /* removes all browser styling */
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  color: rgb(0, 0, 0); /* or any color you want */
+}
+.btnclose {
+  font-family: "Play", sans-serif;
+  width: 10%;
+  padding:3px;
+  background-color: rgb(234, 234, 9);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}

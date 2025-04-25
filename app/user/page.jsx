@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import TournamentSearchForm from '/components/TournamentSearchForm';
 import TournamentResults from '/components/TournamentResults';
 import FooterBlack from '/components/FooterBlack'; 
+import UserRegistrations from '/components/UserRegistrations';
 
 export default function UserPage() {
   const [tournaments, setTournaments] = useState([]);
@@ -26,6 +27,7 @@ export default function UserPage() {
     <div>
       <TournamentSearchForm onSearch={fetchTournaments} />
       <TournamentResults tournaments={tournaments} refresh={fetchTournaments} />
+      <UserRegistrations />
       <FooterBlack />
     </div>
   );

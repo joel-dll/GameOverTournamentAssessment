@@ -1,5 +1,5 @@
-// ✅ TournamentResults.jsx
 'use client';
+
 import { auth } from '../lib/firebase';
 import { useEffect } from 'react';
 import axios from 'axios';
@@ -9,20 +9,22 @@ export default function TournamentResults({ tournaments, refresh }) {
   const handleRegister = async (tournamentId, gameTitle) => {
     const user = auth.currentUser;
     if (!user) return alert("Login required");
-
+  
     try {
       const res = await axios.post('/api/register', {
         user_id: user.email,
         tournament_id: tournamentId,
         game_title: gameTitle,
       });
-
-      alert(`✅ Registered for ${gameTitle}`);
-      refresh(); // Refresh tournament list to update remaining spots
+  
+      alert(`Registered for ${gameTitle}`);
+      refresh(); 
+      document.dispatchEvent(new Event('updateRegistrations')); // ✅ Refresh registration list
     } catch (err) {
       alert(err.response?.data?.error || 'Registration failed');
     }
   };
+  
 
   return (
     <div className="list-container">

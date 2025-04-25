@@ -296,4 +296,32 @@
   transform: translateX(-50%);
 }
 
+.register-btn {
+  font-family: "Play", sans-serif;
+  width: 10%;
+  padding:3px;
+  background-color: rgb(80, 255, 179);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
+.tournament-card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 8px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Play", sans-serif;
+  flex-wrap: wrap; /* allows it to break on small screens */
+}
+
+.game-title {
+  color: rgb(0, 176, 144);
+  font-weight: 600;
+}

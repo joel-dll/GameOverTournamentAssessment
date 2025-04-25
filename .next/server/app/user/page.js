@@ -150,7 +150,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ TournamentResults)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* __next_internal_client_entry_do_not_use__ default auto */ \nfunction TournamentResults({ tournaments }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"list-container\",\n        children: tournaments.map((t)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"tournament-card\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                        children: t.game_title\n                    }, void 0, false, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 7,\n                        columnNumber: 11\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: [\n                            \"Date: \",\n                            t.date\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 8,\n                        columnNumber: 11\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: [\n                            \"Location: \",\n                            t.city,\n                            \", \",\n                            t.country\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 9,\n                        columnNumber: 11\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: [\n                            \"Spots Remaining: \",\n                            t.remaining_spots,\n                            \" / \",\n                            t.total_spots\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 10,\n                        columnNumber: 11\n                    }, this)\n                ]\n            }, t.id, true, {\n                fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                lineNumber: 6,\n                columnNumber: 9\n            }, this))\n    }, void 0, false, {\n        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n        lineNumber: 4,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL1RvdXJuYW1lbnRSZXN1bHRzLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQ2UsU0FBU0Esa0JBQWtCLEVBQUVDLFdBQVcsRUFBRTtJQUN2RCxxQkFDRSw4REFBQ0M7UUFBSUMsV0FBVTtrQkFDWkYsWUFBWUcsR0FBRyxDQUFDQyxDQUFBQSxrQkFDZiw4REFBQ0g7Z0JBQWVDLFdBQVU7O2tDQUN4Qiw4REFBQ0c7a0NBQUlELEVBQUVFLFVBQVU7Ozs7OztrQ0FDakIsOERBQUNDOzs0QkFBRTs0QkFBT0gsRUFBRUksSUFBSTs7Ozs7OztrQ0FDaEIsOERBQUNEOzs0QkFBRTs0QkFBV0gsRUFBRUssSUFBSTs0QkFBQzs0QkFBR0wsRUFBRU0sT0FBTzs7Ozs7OztrQ0FDakMsOERBQUNIOzs0QkFBRTs0QkFBa0JILEVBQUVPLGVBQWU7NEJBQUM7NEJBQUlQLEVBQUVRLFdBQVc7Ozs7Ozs7O2VBSmhEUixFQUFFUyxFQUFFOzs7Ozs7Ozs7O0FBU3RCIiwic291cmNlcyI6WyIvVXNlcnMvY2xhdWRpYW1lbmRlcy9EZXNrdG9wL1NvbGVudCBTZXNzaW9ucy9ZZWFyVGhyZWVfMy9Db250ZW1wb3JhcnkgV2ViIEFwcGxpY2F0aW9ucyAoUUhPNjQwKS9Bc3Nlc3NtZW50L0dhbWVPdmVyVG91cm5hbWVudC9jb21wb25lbnRzL1RvdXJuYW1lbnRSZXN1bHRzLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCc7XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUb3VybmFtZW50UmVzdWx0cyh7IHRvdXJuYW1lbnRzIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImxpc3QtY29udGFpbmVyXCI+XG4gICAgICB7dG91cm5hbWVudHMubWFwKHQgPT4gKFxuICAgICAgICA8ZGl2IGtleT17dC5pZH0gY2xhc3NOYW1lPVwidG91cm5hbWVudC1jYXJkXCI+XG4gICAgICAgICAgPGgzPnt0LmdhbWVfdGl0bGV9PC9oMz5cbiAgICAgICAgICA8cD5EYXRlOiB7dC5kYXRlfTwvcD5cbiAgICAgICAgICA8cD5Mb2NhdGlvbjoge3QuY2l0eX0sIHt0LmNvdW50cnl9PC9wPlxuICAgICAgICAgIDxwPlNwb3RzIFJlbWFpbmluZzoge3QucmVtYWluaW5nX3Nwb3RzfSAvIHt0LnRvdGFsX3Nwb3RzfTwvcD5cbiAgICAgICAgPC9kaXY+XG4gICAgICApKX1cbiAgICA8L2Rpdj5cbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJUb3VybmFtZW50UmVzdWx0cyIsInRvdXJuYW1lbnRzIiwiZGl2IiwiY2xhc3NOYW1lIiwibWFwIiwidCIsImgzIiwiZ2FtZV90aXRsZSIsInAiLCJkYXRlIiwiY2l0eSIsImNvdW50cnkiLCJyZW1haW5pbmdfc3BvdHMiLCJ0b3RhbF9zcG90cyIsImlkIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./components/TournamentResults.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ TournamentResults)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _lib_firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/firebase */ \"(ssr)/./lib/firebase.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/styles.css */ \"(ssr)/./styles/styles.css\");\n// ✅ TournamentResults.jsx\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n // adjust path if needed\nfunction TournamentResults({ tournaments, refresh }) {\n    const handleRegister = async (tournamentId, gameTitle)=>{\n        const user = _lib_firebase__WEBPACK_IMPORTED_MODULE_1__.auth.currentUser;\n        if (!user) return alert(\"Login required\");\n        try {\n            const res = await axios__WEBPACK_IMPORTED_MODULE_4__[\"default\"].post('/api/register', {\n                user_id: user.email,\n                tournament_id: tournamentId,\n                game_title: gameTitle\n            });\n            alert(`✅ Registered for ${gameTitle}`);\n            refresh(); // Refresh tournament list to update remaining spots\n        } catch (err) {\n            alert(err.response?.data?.error || 'Registration failed');\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"list-container\",\n        children: tournaments.map((t)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"tournament-card-horizontal\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        className: \"register-btn\",\n                        onClick: ()=>handleRegister(t.id, t.game_title),\n                        children: \"Register\"\n                    }, void 0, false, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 31,\n                        columnNumber: 3\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        className: \"game-title\",\n                        children: [\n                            \"*\",\n                            t.game_title,\n                            \"*\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 38,\n                        columnNumber: 3\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"strong\", {\n                                children: \"Date:\"\n                            }, void 0, false, {\n                                fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                                lineNumber: 39,\n                                columnNumber: 9\n                            }, this),\n                            \" \",\n                            t.date\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 39,\n                        columnNumber: 3\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"strong\", {\n                                children: \"Location:\"\n                            }, void 0, false, {\n                                fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                                lineNumber: 40,\n                                columnNumber: 9\n                            }, this),\n                            \" \",\n                            t.city,\n                            \", \",\n                            t.country\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 40,\n                        columnNumber: 3\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"strong\", {\n                                children: \"Spots Remaining:\"\n                            }, void 0, false, {\n                                fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                                lineNumber: 41,\n                                columnNumber: 9\n                            }, this),\n                            \" \",\n                            t.remaining_spots,\n                            \" / \",\n                            t.total_spots\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                        lineNumber: 41,\n                        columnNumber: 3\n                    }, this)\n                ]\n            }, t.id, true, {\n                fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n                lineNumber: 30,\n                columnNumber: 9\n            }, this))\n    }, void 0, false, {\n        fileName: \"/Users/claudiamendes/Desktop/Solent Sessions/YearThree_3/Contemporary Web Applications (QHO640)/Assessment/GameOverTournament/components/TournamentResults.jsx\",\n        lineNumber: 28,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL1RvdXJuYW1lbnRSZXN1bHRzLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBLDBCQUEwQjs7QUFFYTtBQUNMO0FBQ1I7QUFDSSxDQUFDLHdCQUF3QjtBQUV4QyxTQUFTRyxrQkFBa0IsRUFBRUMsV0FBVyxFQUFFQyxPQUFPLEVBQUU7SUFDaEUsTUFBTUMsaUJBQWlCLE9BQU9DLGNBQWNDO1FBQzFDLE1BQU1DLE9BQU9ULCtDQUFJQSxDQUFDVSxXQUFXO1FBQzdCLElBQUksQ0FBQ0QsTUFBTSxPQUFPRSxNQUFNO1FBRXhCLElBQUk7WUFDRixNQUFNQyxNQUFNLE1BQU1WLDZDQUFLQSxDQUFDVyxJQUFJLENBQUMsaUJBQWlCO2dCQUM1Q0MsU0FBU0wsS0FBS00sS0FBSztnQkFDbkJDLGVBQWVUO2dCQUNmVSxZQUFZVDtZQUNkO1lBRUFHLE1BQU0sQ0FBQyxpQkFBaUIsRUFBRUgsV0FBVztZQUNyQ0gsV0FBVyxvREFBb0Q7UUFDakUsRUFBRSxPQUFPYSxLQUFLO1lBQ1pQLE1BQU1PLElBQUlDLFFBQVEsRUFBRUMsTUFBTUMsU0FBUztRQUNyQztJQUNGO0lBRUEscUJBQ0UsOERBQUNDO1FBQUlDLFdBQVU7a0JBQ1puQixZQUFZb0IsR0FBRyxDQUFDLENBQUNDLGtCQUNoQiw4REFBQ0g7Z0JBQWVDLFdBQVU7O2tDQUNoQyw4REFBQ0c7d0JBQ0NILFdBQVU7d0JBQ1ZJLFNBQVMsSUFBTXJCLGVBQWVtQixFQUFFRyxFQUFFLEVBQUVILEVBQUVSLFVBQVU7a0NBQ2pEOzs7Ozs7a0NBSUQsOERBQUNZO3dCQUFLTixXQUFVOzs0QkFBYTs0QkFBRUUsRUFBRVIsVUFBVTs0QkFBQzs7Ozs7OztrQ0FDNUMsOERBQUNZOzswQ0FBSyw4REFBQ0M7MENBQU87Ozs7Ozs0QkFBYzs0QkFBRUwsRUFBRU0sSUFBSTs7Ozs7OztrQ0FDcEMsOERBQUNGOzswQ0FBSyw4REFBQ0M7MENBQU87Ozs7Ozs0QkFBa0I7NEJBQUVMLEVBQUVPLElBQUk7NEJBQUM7NEJBQUdQLEVBQUVRLE9BQU87Ozs7Ozs7a0NBQ3JELDhEQUFDSjs7MENBQUssOERBQUNDOzBDQUFPOzs7Ozs7NEJBQXlCOzRCQUFFTCxFQUFFUyxlQUFlOzRCQUFDOzRCQUFJVCxFQUFFVSxXQUFXOzs7Ozs7OztlQVg1RFYsRUFBRUcsRUFBRTs7Ozs7Ozs7OztBQWlCdEIiLCJzb3VyY2VzIjpbIi9Vc2Vycy9jbGF1ZGlhbWVuZGVzL0Rlc2t0b3AvU29sZW50IFNlc3Npb25zL1llYXJUaHJlZV8zL0NvbnRlbXBvcmFyeSBXZWIgQXBwbGljYXRpb25zIChRSE82NDApL0Fzc2Vzc21lbnQvR2FtZU92ZXJUb3VybmFtZW50L2NvbXBvbmVudHMvVG91cm5hbWVudFJlc3VsdHMuanN4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIOKchSBUb3VybmFtZW50UmVzdWx0cy5qc3hcbid1c2UgY2xpZW50JztcbmltcG9ydCB7IGF1dGggfSBmcm9tICcuLi9saWIvZmlyZWJhc2UnO1xuaW1wb3J0IHsgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcbmltcG9ydCAnLi4vc3R5bGVzL3N0eWxlcy5jc3MnOyAvLyBhZGp1c3QgcGF0aCBpZiBuZWVkZWRcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gVG91cm5hbWVudFJlc3VsdHMoeyB0b3VybmFtZW50cywgcmVmcmVzaCB9KSB7XG4gIGNvbnN0IGhhbmRsZVJlZ2lzdGVyID0gYXN5bmMgKHRvdXJuYW1lbnRJZCwgZ2FtZVRpdGxlKSA9PiB7XG4gICAgY29uc3QgdXNlciA9IGF1dGguY3VycmVudFVzZXI7XG4gICAgaWYgKCF1c2VyKSByZXR1cm4gYWxlcnQoXCJMb2dpbiByZXF1aXJlZFwiKTtcblxuICAgIHRyeSB7XG4gICAgICBjb25zdCByZXMgPSBhd2FpdCBheGlvcy5wb3N0KCcvYXBpL3JlZ2lzdGVyJywge1xuICAgICAgICB1c2VyX2lkOiB1c2VyLmVtYWlsLFxuICAgICAgICB0b3VybmFtZW50X2lkOiB0b3VybmFtZW50SWQsXG4gICAgICAgIGdhbWVfdGl0bGU6IGdhbWVUaXRsZSxcbiAgICAgIH0pO1xuXG4gICAgICBhbGVydChg4pyFIFJlZ2lzdGVyZWQgZm9yICR7Z2FtZVRpdGxlfWApO1xuICAgICAgcmVmcmVzaCgpOyAvLyBSZWZyZXNoIHRvdXJuYW1lbnQgbGlzdCB0byB1cGRhdGUgcmVtYWluaW5nIHNwb3RzXG4gICAgfSBjYXRjaCAoZXJyKSB7XG4gICAgICBhbGVydChlcnIucmVzcG9uc2U/LmRhdGE/LmVycm9yIHx8ICdSZWdpc3RyYXRpb24gZmFpbGVkJyk7XG4gICAgfVxuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJsaXN0LWNvbnRhaW5lclwiPlxuICAgICAge3RvdXJuYW1lbnRzLm1hcCgodCkgPT4gKFxuICAgICAgICA8ZGl2IGtleT17dC5pZH0gY2xhc3NOYW1lPVwidG91cm5hbWVudC1jYXJkLWhvcml6b250YWxcIj5cbiAgPGJ1dHRvblxuICAgIGNsYXNzTmFtZT1cInJlZ2lzdGVyLWJ0blwiXG4gICAgb25DbGljaz17KCkgPT4gaGFuZGxlUmVnaXN0ZXIodC5pZCwgdC5nYW1lX3RpdGxlKX1cbiAgPlxuICAgIFJlZ2lzdGVyXG4gIDwvYnV0dG9uPlxuXG4gIDxzcGFuIGNsYXNzTmFtZT1cImdhbWUtdGl0bGVcIj4qe3QuZ2FtZV90aXRsZX0qPC9zcGFuPlxuICA8c3Bhbj48c3Ryb25nPkRhdGU6PC9zdHJvbmc+IHt0LmRhdGV9PC9zcGFuPlxuICA8c3Bhbj48c3Ryb25nPkxvY2F0aW9uOjwvc3Ryb25nPiB7dC5jaXR5fSwge3QuY291bnRyeX08L3NwYW4+XG4gIDxzcGFuPjxzdHJvbmc+U3BvdHMgUmVtYWluaW5nOjwvc3Ryb25nPiB7dC5yZW1haW5pbmdfc3BvdHN9IC8ge3QudG90YWxfc3BvdHN9PC9zcGFuPlxuPC9kaXY+XG4gICAgIFxuICAgICAgKSl9XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiYXV0aCIsInVzZUVmZmVjdCIsImF4aW9zIiwiVG91cm5hbWVudFJlc3VsdHMiLCJ0b3VybmFtZW50cyIsInJlZnJlc2giLCJoYW5kbGVSZWdpc3RlciIsInRvdXJuYW1lbnRJZCIsImdhbWVUaXRsZSIsInVzZXIiLCJjdXJyZW50VXNlciIsImFsZXJ0IiwicmVzIiwicG9zdCIsInVzZXJfaWQiLCJlbWFpbCIsInRvdXJuYW1lbnRfaWQiLCJnYW1lX3RpdGxlIiwiZXJyIiwicmVzcG9uc2UiLCJkYXRhIiwiZXJyb3IiLCJkaXYiLCJjbGFzc05hbWUiLCJtYXAiLCJ0IiwiYnV0dG9uIiwib25DbGljayIsImlkIiwic3BhbiIsInN0cm9uZyIsImRhdGUiLCJjaXR5IiwiY291bnRyeSIsInJlbWFpbmluZ19zcG90cyIsInRvdGFsX3Nwb3RzIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./components/TournamentResults.jsx\n");
 
 /***/ }),
 
@@ -213,7 +213,7 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"2d933ae55a6c\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zdHlsZXMvc3R5bGVzLmNzcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsY0FBYztBQUM3QixJQUFJLEtBQVUsRUFBRSxFQUF1QiIsInNvdXJjZXMiOlsiL1VzZXJzL2NsYXVkaWFtZW5kZXMvRGVza3RvcC9Tb2xlbnQgU2Vzc2lvbnMvWWVhclRocmVlXzMvQ29udGVtcG9yYXJ5IFdlYiBBcHBsaWNhdGlvbnMgKFFITzY0MCkvQXNzZXNzbWVudC9HYW1lT3ZlclRvdXJuYW1lbnQvc3R5bGVzL3N0eWxlcy5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCIyZDkzM2FlNTVhNmNcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./styles/styles.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"b5176ba1e38d\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zdHlsZXMvc3R5bGVzLmNzcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsY0FBYztBQUM3QixJQUFJLEtBQVUsRUFBRSxFQUF1QiIsInNvdXJjZXMiOlsiL1VzZXJzL2NsYXVkaWFtZW5kZXMvRGVza3RvcC9Tb2xlbnQgU2Vzc2lvbnMvWWVhclRocmVlXzMvQ29udGVtcG9yYXJ5IFdlYiBBcHBsaWNhdGlvbnMgKFFITzY0MCkvQXNzZXNzbWVudC9HYW1lT3ZlclRvdXJuYW1lbnQvc3R5bGVzL3N0eWxlcy5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCJiNTE3NmJhMWUzOGRcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./styles/styles.css\n");
 
 /***/ }),
 
@@ -261,6 +261,82 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "?4c03":
+/*!***********************!*\
+  !*** debug (ignored) ***!
+  \***********************/
+/***/ (() => {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
 /***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
 /*!*************************************************************************!*\
   !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
@@ -281,6 +357,50 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 "use strict";
 module.exports = require("path");
 
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
 /***/ })
 
 };
@@ -290,7 +410,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@firebase","vendor-chunks/tslib","vendor-chunks/idb","vendor-chunks/firebase"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fuser%2Fpage&page=%2Fuser%2Fpage&appPaths=%2Fuser%2Fpage&pagePath=private-next-app-dir%2Fuser%2Fpage.jsx&appDir=%2FUsers%2Fclaudiamendes%2FDesktop%2FSolent%20Sessions%2FYearThree_3%2FContemporary%20Web%20Applications%20(QHO640)%2FAssessment%2FGameOverTournament%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fclaudiamendes%2FDesktop%2FSolent%20Sessions%2FYearThree_3%2FContemporary%20Web%20Applications%20(QHO640)%2FAssessment%2FGameOverTournament&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/axios","vendor-chunks/asynckit","vendor-chunks/math-intrinsics","vendor-chunks/@firebase","vendor-chunks/es-errors","vendor-chunks/@swc","vendor-chunks/call-bind-apply-helpers","vendor-chunks/get-proto","vendor-chunks/idb","vendor-chunks/firebase","vendor-chunks/mime-db","vendor-chunks/has-symbols","vendor-chunks/gopd","vendor-chunks/function-bind","vendor-chunks/form-data","vendor-chunks/follow-redirects","vendor-chunks/tslib","vendor-chunks/proxy-from-env","vendor-chunks/mime-types","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/get-intrinsic","vendor-chunks/es-set-tostringtag","vendor-chunks/es-object-atoms","vendor-chunks/es-define-property","vendor-chunks/dunder-proto","vendor-chunks/delayed-stream","vendor-chunks/combined-stream"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fuser%2Fpage&page=%2Fuser%2Fpage&appPaths=%2Fuser%2Fpage&pagePath=private-next-app-dir%2Fuser%2Fpage.jsx&appDir=%2FUsers%2Fclaudiamendes%2FDesktop%2FSolent%20Sessions%2FYearThree_3%2FContemporary%20Web%20Applications%20(QHO640)%2FAssessment%2FGameOverTournament%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fclaudiamendes%2FDesktop%2FSolent%20Sessions%2FYearThree_3%2FContemporary%20Web%20Applications%20(QHO640)%2FAssessment%2FGameOverTournament&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

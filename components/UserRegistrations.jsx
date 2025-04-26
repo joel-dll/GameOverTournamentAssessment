@@ -90,7 +90,7 @@ export default function UserRegistrations() {
 
           <div style={{ display: 'flex', gap: '1rem', marginTop: '10px', justifyContent: 'center'  }}>
             <button className="btnclose" onClick={() => setSelected(null)}>Close</button>
-            <button className="btndelete" style={{ backgroundColor: 'red', color: 'white' }} onClick={handleCancel}>
+            <button className="btndelete"  onClick={handleCancel}>
               Cancel Registration
             </button>
           </div>

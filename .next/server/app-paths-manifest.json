@@ -1,8 +1,6 @@
 {
   "/api/register/route": "app/api/register/route.js",
   "/api/registrations/route": "app/api/registrations/route.js",
-  "/api/tournaments/search/route": "app/api/tournaments/search/route.js",
-  "/api/cancel/route": "app/api/cancel/route.js",
   "/user/page": "app/user/page.js",
   "/page": "app/page.js"
 }

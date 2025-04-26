@@ -309,6 +309,10 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.register-btn:hover {
+  background-color: rgb(234, 234, 9);
+  transform: scale(1.05);
+}
 
 .tournament-card-horizontal {
   display: flex;
@@ -378,11 +382,15 @@
   transition: all 0.3s ease-in-out;
 
 }
+.btnclose:hover {
+  background-color: rgb(213, 213, 213);
+  transform: scale(1.05);
+}
 .btndelete {
   font-family: "Play", sans-serif;
   width: 20%;
   padding:3px;
-  background-color: rgb(192, 0, 0);
+  background-color: rgb(252, 119, 119);
   color: rgb(35, 35, 35);
   font-size: 12px;
   font-weight: bold;
@@ -391,6 +399,10 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
+}
+.btndelete:hover {
+  background-color: rgb(213, 213, 213);
+  transform: scale(1.05);;
 }
 .map-container {
   width: 52%;
@@ -404,7 +416,23 @@
   overflow: hidden;
 }
 
-
+.popup-register-btn {
+  font-family: "Play", sans-serif;
+  width: 40%;
+  padding:3px;
+  background-color: rgb(80, 255, 179);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.popup-register-btn:hover {
+  background-color: rgb(234, 234, 9);
+  transform: scale(1.05);
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./node_modules/leaflet/dist/leaflet.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/

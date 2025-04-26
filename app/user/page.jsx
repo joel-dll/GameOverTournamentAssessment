@@ -1,5 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
+
+import { auth } from '../../lib/firebase'; 
+
 import TournamentSearchForm from '/components/TournamentSearchForm';
 import TournamentResults from '/components/TournamentResults';
 import FooterBlack from '/components/FooterBlack'; 
@@ -21,20 +24,40 @@ export default function UserPage() {
   };
   const handleRegister = async (tournamentId, gameTitle) => {
     const user = auth.currentUser;
-    if (!user) return alert("Login required");
-
+    if (!user) {
+      alert("Login required");
+      return;
+    }
+  
     try {
-      await axios.post('/api/register', {
+      console.log('📩 Sending Register request:', {
         user_id: user.email,
         tournament_id: tournamentId,
         game_title: gameTitle,
       });
-
-      alert(`Registered for ${gameTitle}`);
-      fetchTournaments();
-      document.dispatchEvent(new Event('updateRegistrations'));
+  
+      const res = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          user_id: user.email,
+          tournament_id: tournamentId,
+          game_title: gameTitle,
+        }),
+      });
+  
+      const data = await res.json();
+      if (!res.ok) {
+        console.error('❌ Register failed:', data);
+        alert(data.error || 'Registration failed');
+      } else {
+        console.log('✅ Registered successfully:', data);
+        alert(`Registered for ${gameTitle}`);
+        document.dispatchEvent(new Event('updateRegistrations'));
+      }
     } catch (err) {
-      alert(err.response?.data?.error || 'Registration failed');
+      console.error('❌ Registration Error:', err);
+      alert('Registration failed');
     }
   };
 

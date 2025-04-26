@@ -225,7 +225,7 @@
   color: rgb(50, 50, 50);
   transition: all 0.3s ease-in-out;
   font-family: 'Play', 'Poppins', sans-serif;
-   margin-left: 60%;
+  margin-left: 60%;
   margin-top: 2%;
   transform: translateX(-50%);
 }
@@ -427,4 +427,84 @@
 .popup-register-btn:hover {
   background-color: rgb(234, 234, 9);
   transform: scale(1.05);
+}
+.admin-container {
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px; 
+  max-height: 557px; 
+  overflow-y: auto; 
+    
+  width: 55%;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgb(229, 229, 229);
+  font-family: 'Play', 'Poppins', sans-serif;
+  color: rgb(50, 50, 50);
+  margin-top: 2.8%;     /* Moves it DOWN */
+  margin-left: 33%;   /* Moves it to the LEFT */
+  transform: translateX(0); /* no need to center anymore */
+}
+
+
+.admin-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.admin-form {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.admin-form input {
+  padding: 1px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+}
+
+/* Tournament List style */
+.admin-tournament-list {
+  flex: 2 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-tournament-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+
+}
+.btnadmin{
+  font-family: "Play", sans-serif;
+  width: 10%;
+  padding:3px;
+  background-color: rgb(80, 255, 179);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 1%;
+  
+}
+.btnadmin:hover {
+  background-color: rgb(213, 213, 213);
+  transform: scale(1.05);;
 }

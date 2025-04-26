@@ -1,5 +1,10 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/user/page": "app/user/page.js",
-  "/page": "app/page.js"
+  "/api/admin/edit/route": "app/api/admin/edit/route.js",
+  "/api/admin/tournaments/route": "app/api/admin/tournaments/route.js",
+  "/api/admin/cancel/route": "app/api/admin/cancel/route.js",
+  "/api/tournaments/search/route": "app/api/tournaments/search/route.js",
+  "/api/registrations/route": "app/api/registrations/route.js",
+  "/admin/page": "app/admin/page.js",
+  "/page": "app/page.js",
+  "/user/page": "app/user/page.js"
 }

@@ -1,4 +1,4 @@
-/* Background container and video */
+
 .login-container {
     position: relative;
     min-height: 100vh;
@@ -19,7 +19,6 @@
     border-radius: 45%;
   }
   
-  /* Title Styling */
   .title-container {
     font-size: 5vw;
     color: rgb(80, 255, 179);
@@ -42,7 +41,6 @@
     margin: 0;
   }
   
-  /* Year 2025 */
   .year-text {
     position: absolute;
     top: 30%;
@@ -54,7 +52,6 @@
     z-index: 2;
   }
   
-  /* Auth Form */
   .auth-container {
     display: flex;
     flex-direction: column;
@@ -115,7 +112,6 @@
     transform: scale(1.1);
   }
   
-  /* Social Icons */
   .social-icons {
     position: absolute;
     bottom: 5%;
@@ -139,7 +135,6 @@
     opacity: 1;
   }
   
-  /* Footer */
   .footer {
     position: absolute;
     bottom: 1%;
@@ -182,7 +177,7 @@
     border-radius: 16px;
     padding: 12px 20px;
     width: fit-content;
-    max-width: 70vw; /* Limit so it doesn't stretch too far */
+    max-width: 70vw; 
     font-size: 1rem;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -203,9 +198,9 @@
     
   }
   .logout-btn {
-    position: fixed; /* Keeps the logout button fixed during scrolling */
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
     font-size: 12px;
     color: rgb(2, 2, 2);
     padding: 5px 10px;
@@ -232,9 +227,9 @@
 }
 
 .list-container {
-  margin-inline-end: 20px; /* Existing property */
-  max-height: 250px; /* Set the maximum height as needed */
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  margin-inline-end: 20px; 
+  max-height: 250px; 
+  overflow-y: auto; 
   
 }
 .search-form button {
@@ -317,7 +312,7 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0);
   font-family: "Play", sans-serif;
-  flex-wrap: wrap; /* allows it to break on small screens */
+  flex-wrap: wrap; 
 }
 
 .game-title {
@@ -326,9 +321,9 @@
 }
 
 .registration-box {
-  margin-inline-end: 20px; /* Existing property */
-  max-height: 700px; /* Set the maximum height as needed */
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  margin-inline-end: 20px; 
+  max-height: 700px; 
+  overflow-y: auto; 
   padding-bottom: 1%;
   
 }
@@ -357,10 +352,10 @@
   font-size: 13px;
 }
 .reg-btn {
-  all: unset; /* removes all browser styling */
+  all: unset; 
   cursor: pointer;
   font-family: 'Play', sans-serif;
-  color: rgb(0, 0, 0); /* or any color you want */
+  color: rgb(0, 0, 0);
 }
 .btnclose {
   font-family: "Play", sans-serif;

@@ -41,6 +41,7 @@ export default function TournamentResults({ tournaments, refresh }) {
   <span><strong>Date:</strong> {t.date}</span>
   <span><strong>Location:</strong> {t.city}, {t.country}</span>
   <span><strong>Spots Remaining:</strong> {t.remaining_spots} / {t.total_spots}</span>
+  <span><strong>Status:</strong> {t.status}</span> 
 </div>
      
       ))}

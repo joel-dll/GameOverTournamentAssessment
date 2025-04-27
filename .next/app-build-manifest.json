@@ -12,22 +12,6 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/admin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/admin/page.css",
-      "static/chunks/app/admin/page.js"
-    ],
-    "/api/admin/tournaments/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/admin/tournaments/route.js"
-    ],
-    "/api/admin/edit/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/admin/edit/route.js"
-    ],
     "/user/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -44,10 +28,21 @@
       "static/chunks/main-app.js",
       "static/chunks/app/api/registrations/route.js"
     ],
-    "/api/admin/cancel/route": [
+    "/admin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/admin/cancel/route.js"
+      "static/css/app/admin/page.css",
+      "static/chunks/app/admin/page.js"
+    ],
+    "/api/admin/tournaments/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/admin/tournaments/route.js"
+    ],
+    "/api/admin/toggle-status/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/admin/toggle-status/route.js"
     ]
   }
 }

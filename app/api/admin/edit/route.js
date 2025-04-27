@@ -10,11 +10,44 @@ export async function POST(req) {
     const body = await req.json();
     const { id, game_title, date, city, country, total_spots, latitude, longitude } = body;
 
+    // First get the existing tournament
+    const tournament = db.prepare('SELECT * FROM tournaments WHERE id = ?').get(id);
+    if (!tournament) {
+      return NextResponse.json({ error: 'Tournament not found' }, { status: 404 });
+    }
+
+    // Calculate how much to adjust remaining_spots
+    const spotsDifference = total_spots - tournament.total_spots;
+    const newRemainingSpots = tournament.remaining_spots + spotsDifference;
+
+    if (newRemainingSpots < 0) {
+      return NextResponse.json({ error: 'Cannot have negative remaining spots' }, { status: 400 });
+    }
+
+    // ✅ Now update tournament
     db.prepare(`
       UPDATE tournaments
-      SET game_title = ?, date = ?, city = ?, country = ?, total_spots = ?, latitude = ?, longitude = ?
+      SET 
+        game_title = ?, 
+        date = ?, 
+        city = ?, 
+        country = ?, 
+        total_spots = ?, 
+        remaining_spots = ?, 
+        latitude = ?, 
+        longitude = ?
       WHERE id = ?
-    `).run(game_title, date, city, country, total_spots, latitude, longitude, id);
+    `).run(
+      game_title,
+      date,
+      city,
+      country,
+      total_spots,
+      newRemainingSpots,
+      latitude,
+      longitude,
+      id
+    );
 
     return NextResponse.json({ success: true });
   } catch (error) {
@@ -22,3 +55,4 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
+

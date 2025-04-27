@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import '/styles/styles.css';
+import '/styles/styles.css'; // adjust if your CSS is elsewhere
 
 export default function AdminDashboard() {
   const [tournaments, setTournaments] = useState([]);
@@ -17,6 +17,7 @@ export default function AdminDashboard() {
   });
   const [editingTournament, setEditingTournament] = useState(null);
 
+  // ✅ Fetch tournaments
   const fetchTournaments = async () => {
     try {
       const res = await axios.get('/api/admin/tournaments');
@@ -30,6 +31,7 @@ export default function AdminDashboard() {
     fetchTournaments();
   }, []);
 
+  // ✅ Add tournament
   const handleAddTournament = async (e) => {
     e.preventDefault();
     try {
@@ -51,6 +53,7 @@ export default function AdminDashboard() {
     }
   };
 
+  // ✅ Delete tournament
   const handleDeleteTournament = async (id) => {
     if (!confirm('Are you sure you want to delete this tournament?')) return;
     try {
@@ -59,22 +62,23 @@ export default function AdminDashboard() {
       fetchTournaments();
     } catch (err) {
       console.error('Delete tournament failed:', err);
-      alert('Failed to delete');
+      alert('Failed to delete tournament');
     }
   };
 
-  const handleCancelTournament = async (id) => {
-    if (!confirm('Are you sure you want to cancel this tournament?')) return;
+  // ✅ Toggle active/cancelled status
+  const handleToggleStatus = async (id, currentStatus) => {
+    const newStatus = currentStatus === 'active' ? 'cancelled' : 'active';
     try {
-      await axios.post(`/api/admin/cancel`, { id });
-      alert('Tournament cancelled.');
+      await axios.post('/api/admin/toggle-status', { id, status: newStatus });
       fetchTournaments();
     } catch (err) {
-      console.error('Cancel tournament failed:', err);
-      alert('Failed to cancel');
+      console.error('Toggle status failed:', err);
+      alert('Failed to update status');
     }
   };
 
+  // ✅ Edit tournament
   const handleEditTournament = (tournament) => {
     setEditingTournament(tournament);
   };
@@ -94,9 +98,9 @@ export default function AdminDashboard() {
 
   return (
     <div className="admin-container">
-      <h2>Admin Dashboard - Manage Tournaments</h2>
+      <h2>Admin - Manage Tournaments</h2>
 
-      {/* Add Tournament Form */}
+      {/* ➡️ Add Tournament Form */}
       <form className="admin-form" onSubmit={handleAddTournament}>
         <input
           type="text"
@@ -149,21 +153,31 @@ export default function AdminDashboard() {
         <button className="btnadmin" type="submit">Add Tournament</button>
       </form>
 
-      {/* Tournament List */}
+      {/* ➡️ Tournament List */}
       <div className="admin-tournament-list">
         {tournaments.map((t) => (
           <div key={t.id} className="admin-tournament-card">
             <strong>{t.game_title}</strong><br/>
             Date: {t.date}<br/>
             Location: {t.city}, {t.country}<br/>
-            Spots: {t.remaining_spots} / {t.total_spots}
-            <div className="admin-buttons">
-              <button className="btnadmin" onClick={() => handleCancelTournament(t.id)}>Cancel</button>
+            Spots: {t.remaining_spots} / {t.total_spots}<br/>
+            Status: <strong>{t.status}</strong>
+            <br/>
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={t.status === 'active'}
+                onChange={() => handleToggleStatus(t.id, t.status)}
+              />
+              <span className="slider round"></span>
+            </label>
+
+            <div className="admin-buttons" style={{ marginTop: '0.8rem' }}>
               <button className="btnadmin" onClick={() => handleEditTournament(t)}>Edit</button>
               <button className="btnadmin" onClick={() => handleDeleteTournament(t.id)}>Delete</button>
             </div>
 
-            {/* Inline Edit Form Below Tournament */}
+            {/* ➡️ Inline Edit Form */}
             {editingTournament && editingTournament.id === t.id && (
               <form onSubmit={handleSaveEdit} className="admin-form" style={{ marginTop: '1rem' }}>
                 <input

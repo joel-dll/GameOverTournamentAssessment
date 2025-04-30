@@ -465,7 +465,7 @@
 
 }
 
-/* Tournament List style */
+
 .admin-tournament-list {
   flex: 2 1;
   display: flex;
@@ -507,7 +507,7 @@
   transform: scale(1.05);;
 }
 
-/* Switch (toggle) button */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -521,7 +521,7 @@
   height: 0;
 }
 
-/* Slider background */
+
 .slider {
   position: absolute;
   cursor: pointer;

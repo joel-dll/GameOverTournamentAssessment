@@ -1,0 +1,14 @@
+/* components/TournamentsMapAdmin.module.css */
+
+.adminMap {
+    width: 300%;
+    height: 500px; 
+    padding: none;
+    border-radius: 15px;
+    margin-left: 60%;
+    margin-top: 2%;
+    transform: translateX(-50%);
+    position: relative;
+    overflow: hidden;
+  }
+  

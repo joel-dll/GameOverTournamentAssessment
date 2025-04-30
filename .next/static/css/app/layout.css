@@ -431,20 +431,18 @@
 .admin-container {
   -webkit-margin-end: 20px;
           margin-inline-end: 20px; 
-  max-height: 557px; 
+  max-height: 590px; 
   overflow-y: auto; 
-    
   width: 55%;
   padding: 2rem;
   border-radius: 15px;
   background-color: rgb(229, 229, 229);
   font-family: 'Play', 'Poppins', sans-serif;
   color: rgb(50, 50, 50);
-  margin-top: 2.8%;     /* Moves it DOWN */
-  margin-left: 33%;   /* Moves it to the LEFT */
-  transform: translateX(0); /* no need to center anymore */
+  margin-top: 2.8%;    
+  margin-left: 33%;   
+  transform: translateX(0); 
 }
-
 
 .admin-flex {
   display: flex;
@@ -536,7 +534,6 @@
   border-radius: 34px;
 }
 
-/* Round circle */
 .slider:before {
   position: absolute;
   content: "";
@@ -549,13 +546,49 @@
   border-radius: 50%;
 }
 
-/* When checked */
 input:checked + .slider {
   background-color: #4CAF50;
 }
 
-/* Move circle when checked */
 input:checked + .slider:before {
   transform: translateX(22px);
 }
+.registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
 
+.registrations-table th, .registrations-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.registrations-table th {
+  background-color: #f5f5f5;
+}
+
+.admin-registrations {
+  margin-top: 2rem;
+}
+.btn-admin-menu {
+  font-family: "Play", sans-serif;
+  width: 20%;
+  height: 30px;
+  padding:3px;
+  background-color: rgb(234, 234, 9);
+  color: rgb(35, 35, 35);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 1%;
+  
+}
+.btn-admin-menu:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}

@@ -94,6 +94,11 @@ export default function AuthForm() {
         <button className="btn" onClick={handleSignIn}>Sign In</button>
         <button className="btn" onClick={handleSignUp}>Sign Up</button> 
         <button className="btn" type="button" onClick={handleGoogleLogin}>
+          <img
+            src="/images/google-logo.png" // or use a full URL if hosted elsewhere
+            alt="Google logo"
+            style={{ width: '18px', height: '18px', marginRight: '8px', verticalAlign: 'middle' }}
+          />
           Sign in with Google
         </button>
       </div>

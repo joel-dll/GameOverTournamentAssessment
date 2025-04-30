@@ -1,10 +1,12 @@
+// components/TournamentsMap.jsx
+
 'use client';
 
 import { useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
 import '../styles/styles.css'; // Your project CSS
 
-export default function TournamentsMap({ tournaments = [], onRegister }) {
+export default function TournamentsMap({ tournaments = [], onRegister, className, zoomLevel = 3 }) {
   const mapRef = useRef(null);
 
   useEffect(() => {
@@ -16,13 +18,12 @@ export default function TournamentsMap({ tournaments = [], onRegister }) {
         mapRef.current = null;
       }
 
-      const map = L.map('leaflet-map').setView([51.505, -0.10], 3);
+      const map = L.map('leaflet-map').setView([51.505, -0.10], zoomLevel);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
       }).addTo(map);
 
-      // 🎯 Create the custom red icon
       const largerRedIcon = L.icon({
         iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
@@ -32,7 +33,6 @@ export default function TournamentsMap({ tournaments = [], onRegister }) {
         shadowSize: [31, 31],
       });
 
-      // 🎯 Add tournament markers
       tournaments.forEach(t => {
         if (typeof t.latitude === 'number' && typeof t.longitude === 'number') {
           const marker = L.marker([t.latitude, t.longitude], { icon: largerRedIcon }).addTo(map);
@@ -47,7 +47,6 @@ export default function TournamentsMap({ tournaments = [], onRegister }) {
         }
       });
 
-      // 🎯 Handle popup button click
       map.on('popupopen', function (e) {
         const button = e.popup._contentNode.querySelector('.popup-register-btn');
         if (button) {
@@ -63,7 +62,7 @@ export default function TournamentsMap({ tournaments = [], onRegister }) {
     }
 
     initMap();
-  }, [tournaments, onRegister]);
+  }, [tournaments, onRegister, zoomLevel]);
 
-  return <div id="leaflet-map" className="map-container" />;
+  return <div id="leaflet-map" className={className || 'map-container'} />;
 }

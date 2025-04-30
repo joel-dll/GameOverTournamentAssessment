@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import '/styles/styles.css'; // make sure your styles are properly imported
+import '/styles/styles.css'; 
 
 export default function AdminRegistrations() {
   const [registrations, setRegistrations] = useState([]);

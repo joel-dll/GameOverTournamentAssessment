@@ -8,7 +8,7 @@ export default function TournamentsMapAdmin({ tournaments }) {
     <TournamentsMap
       tournaments={tournaments}
       className={styles.adminMap}
-      zoomLevel={4} // diferent zoom level for admin page
+      zoomLevel={4} // zoom level for admin page only not like the user page
     />
   );
 }

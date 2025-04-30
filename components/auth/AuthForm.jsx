@@ -27,9 +27,9 @@ export default function AuthForm() {
       const userEmail = userCredential.user.email;
 
       if (userEmail === adminEmail) {
-        router.push('/admin'); // ✅ Correct
+        router.push('/admin'); 
       } else {
-        router.push('/user');  // ✅ Correct
+        router.push('/user'); 
       }
     } catch (err) {
       setError(err.message);
@@ -44,9 +44,9 @@ export default function AuthForm() {
       const userEmail = userCredential.user.email;
 
       if (userEmail === adminEmail) {
-        router.push('/admin'); // ✅ Corrected
+        router.push('/admin'); 
       } else {
-        router.push('/user');  // ✅ Corrected
+        router.push('/user');  
       }
     } catch (err) {
       setError(err.message);
@@ -60,9 +60,9 @@ export default function AuthForm() {
       const userEmail = result.user.email;
 
       if (userEmail === adminEmail) {
-        router.push('/admin'); // ✅ Corrected
+        router.push('/admin'); 
       } else {
-        router.push('/user');  // ✅ Corrected
+        router.push('/user');  
       }
     } catch (err) {
       setError(err.message);
@@ -95,7 +95,7 @@ export default function AuthForm() {
         <button className="btn" onClick={handleSignUp}>Sign Up</button> 
         <button className="btn" type="button" onClick={handleGoogleLogin}>
           <img
-            src="/images/google-logo.png" // or use a full URL if hosted elsewhere
+            src="/images/google-logo.png" 
             alt="Google logo"
             style={{ width: '18px', height: '18px', marginRight: '8px', verticalAlign: 'middle' }}
           />

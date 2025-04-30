@@ -10,13 +10,13 @@ export async function POST(req) {
     const body = await req.json();
     const { id, game_title, date, city, country, total_spots, latitude, longitude } = body;
 
-    // First get the existing tournament
+    // to get tournament games
     const tournament = db.prepare('SELECT * FROM tournaments WHERE id = ?').get(id);
     if (!tournament) {
       return NextResponse.json({ error: 'Tournament not found' }, { status: 404 });
     }
 
-    // Calculate how much to adjust remaining_spots
+    // calculate remaining_spots
     const spotsDifference = total_spots - tournament.total_spots;
     const newRemainingSpots = tournament.remaining_spots + spotsDifference;
 

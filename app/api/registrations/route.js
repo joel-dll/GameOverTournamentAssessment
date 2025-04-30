@@ -8,7 +8,7 @@ let db;
 try {
   db = new Database(dbPath);
 } catch (err) {
-  console.error('❌ Failed to load database:', err);
+  console.error('Failed to load database:', err);
 }
 
 export async function GET(req) {
@@ -31,7 +31,7 @@ export async function GET(req) {
     return NextResponse.json(results);
 
   } catch (error) {
-    console.error('❌ API /registrations error:', error);
+    console.error('API /registrations error:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

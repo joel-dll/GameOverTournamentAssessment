@@ -19,7 +19,7 @@ export default function UserRegistrations() {
       }
     });
 
-    // ✅ Refresh listener
+    
     const listener = () => {
       console.log("🔁 updateRegistrations triggered");
       const user = auth.currentUser;
@@ -55,8 +55,8 @@ export default function UserRegistrations() {
       if (!res.ok) throw new Error(data.error);
   
       setSelected(null);
-      document.dispatchEvent(new Event('updateRegistrations')); // ✅ refresh registration list
-      document.dispatchEvent(new Event('updateTournaments'));   // ✅ refresh tournament spots
+      document.dispatchEvent(new Event('updateRegistrations')); 
+      document.dispatchEvent(new Event('updateTournaments'));   
       alert('Registration cancelled.');
     } catch (err) {
       console.error('Cancel error:', err);

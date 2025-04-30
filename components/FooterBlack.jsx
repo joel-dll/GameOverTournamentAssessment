@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import '../styles/styles.css'; // adjust path if needed
+import '../styles/styles.css'; 
 
 const FooterBlack = () => {
   return (

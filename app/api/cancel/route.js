@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
 import path from 'path';
 
-// Connect to your DB
+
 const dbPath = path.join(process.cwd(), 'public', 'GameOverTournament.db');
 const db = new Database(dbPath);
 
@@ -11,7 +11,7 @@ export async function POST(req) {
   try {
     const { user_id, game_title, date } = await req.json();
 
-    // Find tournament ID
+    // find tournament id
     const tournament = db.prepare(`
       SELECT id FROM tournaments
       WHERE game_title = ? AND date = ?
@@ -21,7 +21,7 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Tournament not found' }, { status: 404 });
     }
 
-    // Delete the user's registration
+    // delete user registration
     const result = db.prepare(`
       DELETE FROM registrations
       WHERE user_id = ? AND tournament_id = ?
@@ -31,7 +31,7 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Registration not found' }, { status: 404 });
     }
 
-    // Update the tournament's remaining spots
+    // update tournament remaining spots
     db.prepare(`
       UPDATE tournaments
       SET remaining_spots = remaining_spots + 1

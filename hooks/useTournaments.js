@@ -51,15 +51,15 @@ export function useTournaments() {
 
       const data = await res.json();
       if (!res.ok) {
-        console.error('❌ Register failed:', data);
+        console.error('Register failed:', data);
         alert(data.error || 'Registration failed');
       } else {
         alert(`Registered for ${gameTitle}`);
         document.dispatchEvent(new Event('updateRegistrations'));
-        fetchTournaments(); // Optional refresh after register
+        fetchTournaments(); 
       }
     } catch (err) {
-      console.error('❌ Registration Error:', err);
+      console.error('Registration Error:', err);
       alert('Registration failed');
     }
   };

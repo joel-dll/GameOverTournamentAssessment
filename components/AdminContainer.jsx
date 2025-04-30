@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { useAdminTournaments } from '/hooks/useAdminTournaments'; 
 import '/styles/styles.css';
-import TournamentsMapAdmin from './TournamentsMapAdmin'; // ✅ ensure this path is correct
-import AdminRegistrations from './AdminRegistrations'; // ✅ create this component separately
+import TournamentsMapAdmin from './TournamentsMapAdmin'; 
+import AdminRegistrations from './AdminRegistrations'; 
 
 
 export default function AdminContainer() {
@@ -26,19 +26,19 @@ export default function AdminContainer() {
 
   return (
     <div className="admin-container">
-      {/* Navigation Tabs */}
+      {/* navigation Tabs */}
       <div className="admin-nav">
         <button className='btn-admin-menu' onClick={() => setView('dashboard')}>Dashboard</button>
         <button className='btn-admin-menu' onClick={() => setView('map')}>Tournament Map</button>
         <button className='btn-admin-menu' onClick={() => setView('registrations')}>Registrations</button>
       </div>
 
-      {/* Views Logic */}
+      
       {view === 'dashboard' && (
         <>
           <h2>Admin - Manage Tournaments</h2>
 
-          {/* Add Tournament Form */}
+          {/* tournament form to add a tournament */}
           <form className="admin-form" onSubmit={handleAddTournament}>
             <input type="text" placeholder="Game Title" value={newTournament.game_title} onChange={(e) => setNewTournament({ ...newTournament, game_title: e.target.value })} required />
             <input type="date" value={newTournament.date} onChange={(e) => setNewTournament({ ...newTournament, date: e.target.value })} required />
@@ -50,7 +50,7 @@ export default function AdminContainer() {
             <button className="btnadmin" type="submit">Add Tournament</button>
           </form>
 
-          {/* Tournament List */}
+          {/* tournament list */}
           <div className="admin-tournament-list">
             {tournaments.map((t) => (
               <div key={t.id} className="admin-tournament-card">

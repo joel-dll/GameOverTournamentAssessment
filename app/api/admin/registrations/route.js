@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
 import path from 'path';
 
-// Database connection
+// connection to the database
 const dbPath = path.join(process.cwd(), 'public', 'GameOverTournament.db');
 const db = new Database(dbPath);
 

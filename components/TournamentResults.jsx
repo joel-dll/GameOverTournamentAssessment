@@ -3,7 +3,7 @@
 import { auth } from '../lib/firebase';
 import { useEffect } from 'react';
 import axios from 'axios';
-import '../styles/styles.css'; // adjust path if needed
+import '../styles/styles.css'; 
 
 export default function TournamentResults({ tournaments, refresh }) {
   const handleRegister = async (tournamentId, gameTitle) => {
@@ -19,7 +19,7 @@ export default function TournamentResults({ tournaments, refresh }) {
   
       alert(`Registered for ${gameTitle}`);
       refresh(); 
-      document.dispatchEvent(new Event('updateRegistrations')); // ✅ Refresh registration list
+      document.dispatchEvent(new Event('updateRegistrations')); 
     } catch (err) {
       alert(err.response?.data?.error || 'Registration failed');
     }

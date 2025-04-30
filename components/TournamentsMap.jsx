@@ -1,10 +1,10 @@
-// components/TournamentsMap.jsx
+
 
 'use client';
 
 import { useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
-import '../styles/styles.css'; // Your project CSS
+import '../styles/styles.css'; 
 
 export default function TournamentsMap({ tournaments = [], onRegister, className, zoomLevel = 3 }) {
   const mapRef = useRef(null);

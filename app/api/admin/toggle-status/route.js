@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
 import path from 'path';
 
-// Connect to database
+
 const dbPath = path.join(process.cwd(), 'public', 'GameOverTournament.db');
 const db = new Database(dbPath);
 
@@ -18,14 +18,14 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Invalid status' }, { status: 400 });
     }
 
-    // ✅ Update tournament status
+    // update tournament status
     db.prepare(`
       UPDATE tournaments
       SET status = ?
       WHERE id = ?
     `).run(status, id);
 
-    // ✅ Update registrations depending on tournament status
+    // update registrations depending on tournament status
     if (status === 'cancelled') {
       db.prepare(`
         UPDATE registrations

@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useAdminTournaments } from '../hooks/useAdminTournaments'; 
+import { useAdminTournaments } from '/hooks/useAdminTournaments'; 
 import '/styles/styles.css';
 import TournamentsMapAdmin from './TournamentsMapAdmin'; // ✅ ensure this path is correct
 import AdminRegistrations from './AdminRegistrations'; // ✅ create this component separately
+
 
 export default function AdminContainer() {
   const [view, setView] = useState('dashboard');
@@ -14,6 +15,7 @@ export default function AdminContainer() {
     newTournament,
     setNewTournament,
     editingTournament,
+    setEditingTournament,
     fetchTournaments,
     handleAddTournament,
     handleDeleteTournament,

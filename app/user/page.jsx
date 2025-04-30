@@ -6,7 +6,7 @@ import UserRegistrations from '/components/UserRegistrations';
 import TournamentsMap from '/components/TournamentsMap';
 import FooterBlack from '/components/FooterBlack';
 
-import { useTournaments } from '../../hooks/useTournaments'; // ✅
+import { useTournaments } from '../../hooks/useTournaments'; 
 
 export default function UserPage() {
   const { tournaments, fetchTournaments, handleRegister } = useTournaments();

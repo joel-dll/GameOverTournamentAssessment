@@ -24,7 +24,7 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Cannot have negative remaining spots' }, { status: 400 });
     }
 
-    // ✅ Now update tournament
+    //to update tournament
     db.prepare(`
       UPDATE tournaments
       SET 

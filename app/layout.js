@@ -6,6 +6,8 @@ import { auth } from '../lib/firebase';
 import { signOut } from 'firebase/auth';
 import '../styles/styles.css';
 import AuthDetails from '../components/AuthDetails';
+import FooterBlack from '../components/FooterBlack';
+import TopBanner from '../components/TopBanner';
 
 
 
@@ -42,12 +44,16 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body style={{ fontFamily: "'Play', 'Poppins', sans-serif" }}>
-        {(isUserPage || isAdminPage) && <div className="backgroundpicture" />}
-        {(isUserPage || isAdminPage) && <AuthDetails />}
-        <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
-
-       
-      </body>
+      
+      {(isUserPage || isAdminPage) && <div className="backgroundpicture" />}
+      {(isUserPage || isAdminPage) && <AuthDetails />}
+      {(isUserPage || isAdminPage) && <FooterBlack />}
+      {(isUserPage ) && <TopBanner />}
+   
+      <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
+      
+    </body>
+      
     </html>
   );
 }

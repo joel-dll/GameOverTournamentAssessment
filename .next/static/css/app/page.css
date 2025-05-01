@@ -592,3 +592,20 @@ input:checked + .slider:before {
   background-color: rgb(255, 255, 255);
   transform: scale(1.05);
 }
+
+.top-banner {
+  font-family: "Play", sans-serif;
+  background-color: rgb(80, 255, 179);
+  color: rgb(45, 45, 45);
+  text-align: center;
+  padding:1px 0;
+  left: 40%;
+  width: 25%;
+  font-size: 0.6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+

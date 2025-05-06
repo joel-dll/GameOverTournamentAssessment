@@ -1,8 +1,1 @@
-{
-  "/api/tournaments/search/route": "app/api/tournaments/search/route.js",
-  "/api/registrations/route": "app/api/registrations/route.js",
-  "/api/admin/tournaments/route": "app/api/admin/tournaments/route.js",
-  "/admin/page": "app/admin/page.js",
-  "/user/page": "app/user/page.js",
-  "/page": "app/page.js"
-}
+{}

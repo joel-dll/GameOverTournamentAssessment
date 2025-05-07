@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"components/TournamentsMap.jsx -> leaflet\":{\"id\":\"components/TournamentsMap.jsx -> leaflet\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_leaflet_dist_leaflet-src_js.js\"]}}"

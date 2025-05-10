@@ -15,6 +15,8 @@ Firebase account (for Auth)
 
 Clone this repository
 
+https://github.com/joel-dll/GameOverTournamentAssessment.git
+
 Installation
 
 npm install

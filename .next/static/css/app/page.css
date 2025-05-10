@@ -608,4 +608,28 @@ input:checked + .slider:before {
   z-index: 1000;
   
 }
+.language-switcher {
+  font-size: 12px;
+  position: absolute;
+  top: 97%;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1000;
+}
+
+.language-switcher span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.language-switcher span:hover {
+  color: #ff8000;
+}
+
+.language-switcher .divider {
+  cursor: default;
+  color: #666;
+}
 

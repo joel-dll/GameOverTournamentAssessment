@@ -5,11 +5,14 @@ import { auth } from "../lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import "../styles/styles.css";
+import { useTranslation } from "react-i18next"; 
 
 const AuthDetails = () => {
   const [user, setUser] = useState(null);
   const router = useRouter();
-  const adminEmail = 'admin@gameover.com'; 
+  const { t } = useTranslation(); 
+
+  const adminEmail = 'admin@gameover.com';
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -35,24 +38,24 @@ const AuthDetails = () => {
           <p className="authdetails-msg">
             {user?.email === adminEmail ? (
               <>
-                Administrative access granted<br />
+                {t('adminAccess')}<br />
                 <strong>{user?.email}</strong>
               </>
             ) : (
               <>
-                Let the game begin<br />
+                {t('userAccess')}<br />
                 <strong>{user?.email}</strong>
               </>
             )}
           </p>
 
           <button className="btn logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
-    ) : null} 
-  </div>
-);
+            {t('logout')}
+          </button>
+        </div>
+      ) : null}
+    </div>
+  );
 };
 
 export default AuthDetails;

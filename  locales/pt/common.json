@@ -1,0 +1,27 @@
+{
+  "welcome": "Bem-vindo ao Torneio Europeu!",
+  "register": "Registar",
+  "login": "Entrar",
+  "gameTitle": "Título do Jogo",
+  "location": "Localização",
+  "search": "Pesquisar",
+  
+  "yourRegistrations": "As suas inscrições",
+  "clickToSeeDetails": "(Clique num jogo para ver os detalhes completos)",
+  "date": "Data",
+  "status": "Estado",
+  "close": "Fechar",
+  "cancelRegistration": "Cancelar inscrição",
+  "cancelSuccess": "Inscrição cancelada.",
+  "cancelFail": "Falha ao cancelar inscrição.",
+  "loginRequired": "Login necessário",
+  "registeredFor": "Inscrito em {{game}}",
+  "registrationFailed": "Falha ao inscrever-se",
+  "spotsRemaining": "Vagas Restantes",
+  "topBanner": "🎉 Prémios incríveis esperam por ti! Junta-te agora e ganha em grande! 🎁",
+  "adminAccess": "Acesso administrativo concedido",
+  "userAccess": "Que comecem os jogos",
+  "logout": "Sair",
+  "alreadyRegistered": "Já está inscrito neste torneio."
+ 
+}

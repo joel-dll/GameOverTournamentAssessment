@@ -1,13 +1,18 @@
-
-
 'use client';
 
 import { useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
-import '../styles/styles.css'; 
+import '../styles/styles.css';
+import { useTranslation } from 'react-i18next';
 
 export default function TournamentsMap({ tournaments = [], onRegister, className, zoomLevel = 3 }) {
   const mapRef = useRef(null);
+  const { t } = useTranslation();
+
+  
+  const labelDate = t('date');
+  const labelLocation = t('location');
+  const labelRegister = t('register');
 
   useEffect(() => {
     async function initMap() {
@@ -35,15 +40,19 @@ export default function TournamentsMap({ tournaments = [], onRegister, className
 
       tournaments.forEach(t => {
         if (typeof t.latitude === 'number' && typeof t.longitude === 'number') {
-          const marker = L.marker([t.latitude, t.longitude], { icon: largerRedIcon }).addTo(map);
-          marker.bindPopup(`
+          const popupContent = `
             <div style="text-align:center">
               <strong>${t.game_title}</strong><br/>
-              Date: ${t.date}<br/>
-              Location: ${t.city}, ${t.country}<br/>
-              <button class="popup-register-btn" data-id="${t.id}" data-title="${t.game_title}">Register</button>
+              ${labelDate}: ${t.date}<br/>
+              ${labelLocation}: ${t.city}, ${t.country}<br/>
+              <button class="popup-register-btn" data-id="${t.id}" data-title="${t.game_title}">
+                ${labelRegister}
+              </button>
             </div>
-          `);
+          `;
+
+          const marker = L.marker([t.latitude, t.longitude], { icon: largerRedIcon }).addTo(map);
+          marker.bindPopup(popupContent);
         }
       });
 
@@ -62,7 +71,7 @@ export default function TournamentsMap({ tournaments = [], onRegister, className
     }
 
     initMap();
-  }, [tournaments, onRegister, zoomLevel]);
+  }, [tournaments, onRegister, zoomLevel, labelDate, labelLocation, labelRegister]); 
 
   return <div id="leaflet-map" className={className || 'map-container'} />;
 }

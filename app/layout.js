@@ -8,6 +8,9 @@ import '../styles/styles.css';
 import AuthDetails from '../components/AuthDetails';
 import FooterBlack from '../components/FooterBlack';
 import TopBanner from '../components/TopBanner';
+import '../lib/i18n';
+
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 
 
@@ -49,7 +52,8 @@ export default function RootLayout({ children }) {
       {(isUserPage || isAdminPage) && <AuthDetails />}
       {(isUserPage || isAdminPage) && <FooterBlack />}
       {(isUserPage ) && <TopBanner />}
-   
+      {(isUserPage ) && <LanguageSwitcher />}
+     
       <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
       
     </body>

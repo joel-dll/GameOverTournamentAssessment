@@ -5,6 +5,7 @@ import { useAdminTournaments } from '/hooks/useAdminTournaments';
 import '/styles/styles.css';
 import TournamentsMapAdmin from './TournamentsMapAdmin'; 
 import AdminRegistrations from './AdminRegistrations'; 
+import TournamentReviews from '../components/TournamentReviews';
 
 
 export default function AdminContainer() {
@@ -26,11 +27,12 @@ export default function AdminContainer() {
 
   return (
     <div className="admin-container">
-      {/* navigation Tabs */}
+      {/*  admin container tabs */}
       <div className="admin-nav">
         <button className='btn-admin-menu' onClick={() => setView('dashboard')}>Dashboard</button>
         <button className='btn-admin-menu' onClick={() => setView('map')}>Tournament Map</button>
         <button className='btn-admin-menu' onClick={() => setView('registrations')}>Registrations</button>
+        <button className='btn-admin-menu' onClick={() => setView('reviews')}>Reviews</button>
       </div>
 
       
@@ -38,7 +40,7 @@ export default function AdminContainer() {
         <>
           <h2>Admin - Manage Tournaments</h2>
 
-          {/* tournament form to add a tournament */}
+          {/* add  tournament */}
           <form className="admin-form" onSubmit={handleAddTournament}>
             <input type="text" placeholder="Game Title" value={newTournament.game_title} onChange={(e) => setNewTournament({ ...newTournament, game_title: e.target.value })} required />
             <input type="date" value={newTournament.date} onChange={(e) => setNewTournament({ ...newTournament, date: e.target.value })} required />
@@ -50,7 +52,7 @@ export default function AdminContainer() {
             <button className="btnadmin" type="submit">Add Tournament</button>
           </form>
 
-          {/* tournament list */}
+          
           <div className="admin-tournament-list">
             {tournaments.map((t) => (
               <div key={t.id} className="admin-tournament-card">
@@ -105,6 +107,12 @@ export default function AdminContainer() {
           <AdminRegistrations />
         </div>
       )}
+      {view === 'reviews' && (
+        <div style={{ marginTop: '2rem' }}>
+          <TournamentReviews />
+        </div>
+      )}    
+
     </div>
   );
 }

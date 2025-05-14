@@ -36,7 +36,8 @@ export default function RootLayout({ children }) {
   const isAdminPage = pathname === '/admin';
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+
       <head>
         {/* Fonts from google */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

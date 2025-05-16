@@ -22,6 +22,15 @@
   "adminAccess": "Acesso administrativo concedido",
   "userAccess": "Que comecem os jogos",
   "logout": "Sair",
-  "alreadyRegistered": "Já está inscrito neste torneio."
+  "alreadyRegistered": "Já está inscrito neste torneio.",
+  "leaveReview": "Deixar uma Avaliação",
+  "selectTournament": "Seleciona um torneio...",
+  "tournamentLabel": "Torneio:",
+  "ratingLabel": "Classificação:",
+  "feedbackPlaceholder": "Escreve o teu feedback...",
+  "submitReview": "Enviar Avaliação",
+  "reviewSuccess": "Avaliação enviada!",
+  "reviewError": "Falha ao enviar a avaliação.",
+  "authWarning": "Por favor, inicie sessão e selecione um torneio."
  
 }

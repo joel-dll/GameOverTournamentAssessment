@@ -28,14 +28,14 @@ npm run dev
 The application will start at:
 http://localhost:3000
 
-🔐 Test Login Credentials
+Test Login Credentials
 
-👤 Regular User
+ Regular User
 
 Email: joel_dll@hotmail.com
 Password: 123456
 
-🛠️ Admin User
+Admin User
 
 Email: admin@gameover.com
 Password: 123456

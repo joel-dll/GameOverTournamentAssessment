@@ -21,7 +21,15 @@
   "adminAccess": "Administrative access granted",
   "userAccess": "Let the game begin",
   "logout": "Logout",
-  "alreadyRegistered": "You are already registered for this tournament."
-  
+  "alreadyRegistered": "You are already registered for this tournament.",
+  "leaveReview": "Leave a Review",
+  "selectTournament": "Select a tournament...",
+  "tournamentLabel": "Tournament:",
+  "ratingLabel": "Rating:",
+  "feedbackPlaceholder": "Write your feedback...",
+  "submitReview": "Submit Review",
+  "reviewSuccess": "Review submitted!",
+  "reviewError": "Failed to submit review.",
+  "authWarning": "Please log in and select a tournament."  
  
 }
